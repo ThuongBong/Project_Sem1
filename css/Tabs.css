@@ -1,4 +1,9 @@
-
+#content {
+    width: 1350px ;
+    display: block;
+    float: right;
+    margin-bottom: 20px;zzz
+}
 .tabs {
     display: flex;
     position: relative;
@@ -58,7 +63,12 @@
     width: 340px;
     height: 270px;
 }
+.product>p {
+    margin: auto;
+}
 .product>a {
     text-decoration: none;
     text-align: center;
+    margin:auto;
+    display: block;
 }

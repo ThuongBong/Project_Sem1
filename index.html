@@ -10,8 +10,12 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Css Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/themify-icons.css" type="text/css">
@@ -22,8 +26,8 @@
     <link rel="stylesheet" href="css/font-css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/bootstrap.min.js">
-    <link rel="stylesheet" href="css/Tabs.css" type="text/css">
-
+    <link rel="stylesheet" href="css/Tabs.css">
+    <link rel="stylesheet" href="css/daily.css">
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -39,200 +43,414 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-    crossorigin="anonymous"
-  />
+   
 </head>
+
 <body>
 <div id="nav">
-    <div id="header">
-        <img src="logo/logo_size.jpg" class="logo">
-        <ul id="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><button name="search" type="button"><span class="ti-search"></span></button></li>
-        </ul>
-  <!--Banner-->
+  <!--Sitemap-->
+  <div id="header">
+    <div id="menu">
+      <p class="logo"><img src="logo/Logo-hd.png"></p>
+      <ul id="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              id="carouselExampleCaptions"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleCaptions"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="5000">
-                  <img
-                    src="img/Banner/Astraeus Wilderness (1).png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                  <img
-                    src="img/Banner/Astraeus Wilderness.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                  <img
-                    src="img/Banner/Diaries and moments (3).png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              <div class="carousel-item" data-interval="5000">
-                <img
-                  src="img/Banner/Astraeus Wilderness (2).png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
+  </div>
+
+  <!--Banner-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="5000">
+              <img
+                src="img/Banner/1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-target="#carouselExampleCaptions"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true" style="width: 40px; height: 40px;"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-target="#carouselExampleCaptions"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true" style="width: 40px; height: 40px;"
-                ></span>
-                <span class="sr-only">Next</span>
-              </button>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/4.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/5.png"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
         </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleCaptions"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"
+            aria-hidden="true" style="width: 40px; height: 40px;">
+          </span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleCaptions"
+          data-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true" style="width: 40px; height: 40px;"
+          ></span>
+          <span class="sr-only">Next</span>
+        </button>
       </div>
-
     </div>
-    <div id="content">
-        <div id="page-content">
-            <h2>DISCOVER UNIQUE CALENDARS</h2>
-            <div class="tabs">
-                <div class="tab-item active">
-                    WALL CALENDAR
-                </div>
-                <div class="tab-item">
-                    DESK CALENDAR
-                </div>
-                <div class="tab-item">
-                    CALENDAR STICKERS
-                </div>
-                <div class="tab-item">
-                    CALENDAR BOOK
-                </div>
-                <div class="line"></div>
+  </div>
+
+  <!--welcome-->
+  <div id="welcome">
+    <p class="title-welcome">WELCOME</p>
+    <div class="text-welcome">
+      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    </div>
+    <div class="button-welcome">
+      <button type="submit">
+          <a href="#">READ MORE...</a>
+      </button>
+    </div>
+    <hr width="1000">
+  </div>
+
+  <!--Futured-->
+  <div class="container2">
+    <div id="title-futured">
+      <h1>FUTURED PRODUCTS</h1>
+      <span><i>Top best-selling products</i></span>
+    </div>
+  </div>
+
+  <div class="post-feature">
+    <a href="#" class="post-feature-media post-media">
+      <img
+        src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+        alt=""
+        class="post-feature-image"
+      />
+    </a>
+    <div class="post-category">
+      <a href="#" class="post-feature-title post-title">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-feature-image"
+        />
+      </a>
+    </div>
+  </div>
+  
+  <div class="post-list">
+    <div class="post-item">
+      <a href="#" class="post-media">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-image"
+        />
+      </a>
+    </div>
+    <div class="post-item">
+      <a href="#" class="post-media">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-image"
+        />
+      </a>
+    </div>
+    <div class="post-item">
+      <a href="#" class="post-media">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-image"
+        />
+      </a>
+    </div>
+  </div>
+
+
+  <!--Sale-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4 col-padding">
+        <div class="caption">
+        <h5>Editors' Picks</h5>
+        <h2>January Sales Event</h2>
+        <p><a href="#">
+          Shop these unique finds 
+          <i class="fa fa-arrow-right" style="font-size:15px"></i>
+        </a></p>
+        </div>
+      </div>
+      <div class="col-sm-3 col-padding clear-fix">
+        <img class="image01" src="img/sales/Desk Calendar(1).jpg" alt="">
+        <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+      </div>
+      <div class="col-sm-2 col-padding clear-fix">
+        <img class="image01" src="img/sales/Wall Calendar(2).jpg" alt="" width="100%">
+        <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+      </div>
+      <div class="col-sm-3 col-padding clear-fix">
+        <img class="image01" src="img/sales/Desk Calendar(2).jpg" alt="">
+        <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-padding clear-fix">
+        <img class="image01" src="img/sales/Ryana(1).jpg" alt="">
+        <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+      </div>
+      <div class="col-sm-3 col-padding clear-fix">
+        <img class="image01" src="img/sales/Ryana(2).jpg" alt="">
+        <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+      </div>
+      <div class="col-sm-2 col-padding clear-fix">
+        <img class="image01" src="img/sales/Ryana(4).jpg" alt="">
+        <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+      </div>
+      <div class="col-sm-3 col-padding">
+        <div class="caption01">
+          <p>Up to 60% off your favourite finds</p>
+          <p>*Sales terms vary, subject availability 
+            and change. See individual listings for details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Tab Panel
+  <div id="content">
+    <div id="page-content">
+        <h2>DISCOVER UNIQUE CALENDARS</h2>
+        <div class="tabs">
+            <div class="tab-item active">
+                WALL CALENDAR
             </div>
-            <div class="tab-content">
-                <div class="tab-pane active">
-                    <div class="product">
-                        <img src="img/tabs-img/pd-1.webp" class="pd-1"><br>
-                        <p>2022 Calendar | Hanging wall Calendar | 11.5" x 16"</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-2.webp" class="pd-2"><br>
-                        <p>2022 Illustrated Wall Calendar</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-3.jpg" class="pd-3"><br>
-                        <p>12 Month Wall Calendar 2022</p>
-                        <a href="#">More...</a>
-                    </div>
+            <div class="tab-item">
+                DESK CALENDAR
+            </div>
+            <div class="tab-item">
+                CALENDAR STICKERS
+            </div>
+            <div class="tab-item">
+                CALENDAR BOOK
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active">
+                <div class="product">
+                    <img src="img/calendars/pd-1.webp" class="pd-1"><br>
+                    <p>2022 Calendar | Hanging wall Calendar</p>
+                    <a href="#">More</a>
                 </div>
-                <div class="tab-pane">
-                    <div class="product">
-                        <img src="img/tabs-img/pd-4.jpg" class="pd-4"><br>
-                        <p>2022 New Years Vertical Desk Calendar</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-5.jpg" class="pd-5"><br>
-                        <p>2022 Desk Calendar, Dry Erase Desk Month Calendar on Wood stand</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-6.webp" class="pd-6"><br>
-                        <p>2022 National Park Desk Calendar</p>
-                        <a href="#">More...</a>
-                    </div>
+                <div class="product">
+                    <img src="img/calendars/pd-2.webp" class="pd-2"><br>
+                    <p>2022 Illustrated Wall Calendar</p>
+                    <a href="#">More</a>
                 </div>
-                <div class="tab-pane">
-                    <div class="product">
-                        <img src="img/tabs-img/pd-7.jpg" class="pd-7"><br>
-                        <p>Enchanted Calendar Sticker 2022 | Bullet Journal Stickers</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-8.jpg" class="pd-8"><br>
-                        <p>2022 Calendar STICKER Set (12 Month) minimal or illustration Planner Stickers</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-9.jpg" class="pd-9"><br>
-                        <p>Stickers Calendar 2022 for bullet journal - Kraft</p>
-                        <a href="#">More...</a>
-                    </div>
+                <div class="product">
+                    <img src="img/calendars/pd-3.jpg" class="pd-3"><br>
+                    <p>12 Month Wall Calendar 2022</p>
+                    <a href="#">More</a>
                 </div>
-                <div class="tab-pane">
-                    <div class="product">
-                        <img src="img/tabs-img/pd-10.webp" class="pd-10"><br>
-                        <p>Perpetual Birthday Calendar,Perpetual Planner</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-11.webp" class="pd-11"><br>
-                        <p>Monthly Planner, 15 Months, Undated Sheets, Calendar Task and To-Do List Planner</p>
-                        <a href="#">More...</a>
-                    </div>
-                    <div class="product">
-                        <img src="img/tabs-img/pd-12.jpg" class="pd-12"><br>
-                        <p>2022 Planner, Personalised Planner, Weekly Planner</p>
-                        <a href="#">More...</a>
-                    </div>
+            </div>
+            <div class="tab-pane">
+                <div class="product">
+                    <img src="img/calendars/pd-4.jpg" class="pd-4"><br>
+                    <p>2022 New Years Vertical Desk Calendar</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="product">
+                    <img src="img/calendars/pd-5.jpg" class="pd-5"><br>
+                    <p>2022 Desk Calendar, Dry Erase Desk Month Calendar on Wood stand</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="product">
+                    <img src="img/calendars/pd-6.webp" class="pd-6"><br>
+                    <p>2022 National Park Desk Calendar</p>
+                    <a href="#">More</a>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <div class="product">
+                    <img src="img/calendars/pd-7.jpg" class="pd-7"><br>
+                    <p>Enchanted Calendar Sticker 2022 | Bullet Journal Stickers</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="product">
+                    <img src="img/calendars/pd-8.jpg" class="pd-8"><br>
+                    <p>2022 Calendar STICKER Set (12 Month) minimal or illustration Planner Stickers</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="product">
+                    <img src="img/calendars/pd-9.jpg" class="pd-9"><br>
+                    <p>Stickers Calendar 2022 for bullet journal - Kraft</p>
+                    <a href="#">More</a>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <div class="product">
+                    <img src="img/calendars/pd-10.webp" class="pd-10"><br>
+                    <p>Perpetual Birthday Calendar,Perpetual Planner</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="product">
+                    <img src="img/calendars/pd-11.webp" class="pd-11"><br>
+                    <p>Monthly Planner, 15 Months, Undated Sheets, Calendar Task and To-Do List Planner</p>
+                    <a href="#">More</a>
+                </div>
+                <div class="product">
+                    <img src="img/calendars/pd-12.jpg" class="pd-12"><br>
+                    <p>2022 Planner, Personalised Planner, Weekly Planner</p>
+                    <a href="#">More</a>
                 </div>
             </div>
         </div>
     </div>
-    <div id="footer">
+  </div>
 
+  <!--Diary
+  <div id="diary">
+    <form>
+      <fieldset id="field_diary">
+        <legend id="legend_diary" class="w-auto">DIARY</legend>
+        <div id="chu"> <h5> Editor's Picks </h5>
+          <a id="to"><h2>Home favourites</h2></a>
+          <p>See More <a href="#"><i class="fa fa-arrow-right" style="font-size:15px"></i></a></p>
+        </div>
+            
+        <div id="prd_diary">
+          <div id="prd__01"> 
+            <a href="#"><img id="anhsp1" src="img/Diary/il_1140xN.3474875846_e84b.jpg" ></a>       
+          </div>
+                    
+          <div id="prd__02">
+            <a href="#"><img id="anhsp2" src="img/Diary/il_1140xN.3492705258_fuk1.webp" ></a>       
+          </div>
+          
+          <div class="prd__r3">
+            <a href="#"><img class="anhsp3h" src="img/Diary/il_1140xN.3097341582_oqxa.jpg" ></a>
+          </div>
+          <div class="prd__r3">
+            <a href="#"><img class="anhsp3h" src="img/Diary/il_1140xN.3306081202_evfd.jpg" ></a>
+          </div>
+          <div class="prd__r3">
+            <a href="#"><img class="anhsp3h" src="img/Diary/il_1140xN.3306113374_pxyq.jpg"></a>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+  -->
+  <!--NEWS-->
+  <div id="news-home">
+    <div class="container3">
+      <div class="news-text">
+        <a href="#">
+          <span>YOU CAN SEE MORE NEWS: CALENDAR & DIARY</span>
+          <i class="fas fa-arrow-right fa-xs"></i>
+        </a>
+      </div>
+      <section class="news">
+        <div class="news-list">
+          <div class="news-item">
+            <a href="#">
+              <img src="img/Banner/Astraeus Wilderness.png" alt="" class="news-image" />
+              <h3 class="news-title">Offer the best viewing experience.</h3>
+              <p class="news-desc text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                magnam officiis quo atque cupiditate reiciendis in, incidunt
+                accusamus quasi velit minus, nobis delectus reprehenderit
+                inventore modi, ipsum illum porro nulla.
+              </p>
+              <p class="button button--outline news-more">Learn more</p>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="img/Banner/Astraeus Wilderness.png" alt="" class="news-image" />
+              <h3 class="news-title">Offer the best viewing experience.</h3>
+              <p class="news-desc text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                magnam officiis quo atque cupiditate reiciendis in, incidunt
+                accusamus quasi velit minus, nobis delectus reprehenderit
+                inventore modi, ipsum illum porro nulla.
+              </p>
+              <p class="button button--outline news-more">Learn more</p>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="img/Banner/Astraeus Wilderness.png" alt="" class="news-image" />
+              <h3 class="news-title">Offer the best viewing experience.</h3>
+              <p class="news-desc text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                magnam officiis quo atque cupiditate reiciendis in, incidunt
+                accusamus quasi velit minus, nobis delectus reprehenderit
+                inventore modi, ipsum illum porro nulla.
+              </p>
+              <p class="button button--outline news-more">Learn more</p>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
-</div>
+  </div>
 
+  <!--FOOTER-->
+  <div id="footer"></div>
+
+</div>
 <script src="js/Tabs.js"></script>
 </body>
 </html>
