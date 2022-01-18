@@ -9,9 +9,16 @@
     <title>eProject - Sem 1: Ryana Calendars</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&display=swap">
 
-    <!-- Css Styles -->
+    <!-- Css links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/themify-icons.css" type="text/css">
@@ -20,8 +27,21 @@
     <link rel="stylesheet" href="css/font-css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-css/bootstrap.min.js" type="text/css">
+
+    <!--Css styles-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/font-css/bootstrap.min.js">
+    <link rel="stylesheet" href="css/header/header.css">
+    <link rel="stylesheet" href="css/banner/banner.css">
+    <link rel="stylesheet" href="css/content/welcome.css">
+    <link rel="stylesheet" href="css/content/futured.css">
+    <link rel="stylesheet" href="css/content/sales.css">
+    <link rel="stylesheet" href="css/content/tab-pannels.css">
+    <link rel="stylesheet" href="css/content/diary.css">
+    <link rel="stylesheet" href="css/content/news.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
+
+    <!--js-->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -37,112 +57,570 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-    crossorigin="anonymous"
-  />
+   
 </head>
+
 <body>
-<div id="nav">
-    <div id="header">
-        <img src="logo/logo_size.jpg" class="logo">
-        <ul id="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><button name="search" type="button"><span class="ti-search"></span></button></li>
-        </ul>
-  <!--Banner-->
-    </div>
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div
-              id="carouselExampleCaptions"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#carouselExampleCaptions"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="5000">
-                  <img
-                    src="img/Banner/Astraeus Wilderness (1).png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                  <img
-                    src="img/Banner/Astraeus Wilderness.png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                  <img
-                    src="img/Banner/Diaries and moments (3).png"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              <div class="carousel-item" data-interval="5000">
-                <img
-                  src="img/Banner/Astraeus Wilderness (2).png"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
+<div id="nav" class="nav-fix">
+    <!--Header-->
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-branch" href="#">
+        <img src="logo/Logo-hd.png" height="70px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Products
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Calendar</a>
+              <a class="dropdown-item" href="#">Ryana</a>
             </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-target="#carouselExampleCaptions"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true" style="width: 40px; height: 40px;"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-target="#carouselExampleCaptions"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true" style="width: 40px; height: 40px;"
-                ></span>
-                <span class="sr-only">Next</span>
-              </button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              About
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Company</a>
+              <a class="dropdown-item" href="#">Teams</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!--Banner-->
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="5000">
+              <img
+                src="img/Banner/1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/4.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-interval="5000">
+              <img
+                src="img/Banner/5.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#carouselExampleCaptions"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"
+            aria-hidden="true" style="width: 40px; height: 40px;">
+          </span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#carouselExampleCaptions"
+          data-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true" style="width: 40px; height: 40px;"
+          ></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+    <!--welcome-->
+  <div id="welcome">
+    <p class="title-welcome">WELCOME</p>
+    <div class="text-welcome">
+      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+    </div>
+    <div class="button-welcome">
+      <button type="submit">
+          <a href="#">READ MORE...</a>
+      </button>
+    </div>
+    <hr width="1000">
+  </div>
+
+    <!--Futured-->
+  <div class="container2">
+    <div id="title-futured">
+      <h1>FUTURED PRODUCTS</h1>
+      <span><i>Top best-selling products</i></span>
+    </div>
+  </div>
+
+  <div class="post-feature">
+    <a href="#" class="post-feature-media post-media">
+      <img
+        src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+        alt=""
+        class="post-feature-image"
+      />
+    </a>
+    <div class="post-category">
+      <a href="#" class="post-feature-title post-title">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-feature-image"
+        />
+      </a>
+    </div>
+  </div>
+  
+  <div class="post-list">
+    <div class="post-item">
+      <a href="#" class="post-media">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-image"
+        />
+      </a>
+    </div>
+    <div class="post-item">
+      <a href="#" class="post-media">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-image"
+        />
+      </a>
+    </div>
+    <div class="post-item">
+      <a href="#" class="post-media">
+        <img
+          src="https://cdn.dribbble.com/users/5209175/screenshots/15329869/media/46b95b0ec58274621935463cd534f793.jpg?compress=1&resize=1600x1200"
+          alt=""
+          class="post-image"
+        />
+      </a>
+    </div>
+  </div>
+
+
+    <!--Sale-->
+  <div id="sales-fix">
+    <div class="container-fluid container-sales">
+      <div class="row">
+        <div class="col-sm-3 col-padding">
+          <div class="caption">
+          <h6>Editors' Picks</h6>
+          <h4>January Sales Event</h4>
+          <p><a href="#">
+            Shop these unique finds 
+            <i class="fa fa-arrow-right" style="font-size:15px"></i>
+          </a></p>
+          </div>
+        </div>
+        <div class="col-sm-3 col-padding clear-fix">
+          <img class="image01" src="img/sales/Desk Calendar(1).jpg" alt="">
+          <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+        </div>
+        <div class="col-sm-3 col-padding clear-fix">
+          <img class="image01" src="img/sales/Wall Calendar(2).jpg" alt="" width="100%">
+          <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+        </div>
+        <div class="col-sm-3 col-padding clear-fix">
+          <img class="image01" src="img/sales/Desk Calendar(2).jpg" alt="">
+          <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 col-padding clear-fix">
+          <img class="image01" src="img/sales/Ryana(1).jpg" alt="">
+          <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+        </div>
+        <div class="col-sm-3 col-padding clear-fix">
+          <img class="image01" src="img/sales/Ryana(2).jpg" alt="">
+          <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+        </div>
+        <div class="col-sm-3 col-padding clear-fix">
+          <img class="image01" src="img/sales/Ryana(4).jpg" alt="">
+          <p class="button2 button--outline2 news-more"><a href="#">Read More</a></p>
+        </div>
+        <div class="col-sm-3 col-padding">
+          <div class="caption01">
+            <p>Up to 60% off your favourite finds</p>
+            <p>*Sales terms vary, subject available
+            and change. See individual listings for details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!--Tab Panel-->
+  <div id="tab-panels">
+    <div class="container" id="tabpanels-fix" >
+      <h2 class="title-panels">DISCOVER UNIQUE CALENDARS</h2>
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#menu1">TOP CALENDARS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu2">WALL CALENDAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu3">DESK CALENDAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu4">CALENDAR STICKERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#menu5">CALENDAR BOOK</a>
+        </li>
+      </ul> 
+    
+      <div class="tab-content">
+        <div id="menu1" class="container tab-pane active"><br>
+          <div class="row">
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-1.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-2.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-3.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-1.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+          <div class="row">
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-4.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-5.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-6.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-4.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div id="menu3" class="container tab-pane fade"><br>
+          <div class="row">
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-7.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-8.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-9.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-7.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div id="menu4" class="container tab-pane fade"><br>
+          <div class="row">
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-10.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-11.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-12.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-10.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div id="menu5" class="container tab-pane fade"><br>
+          <div class="row">
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-11.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-4.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-6.webp" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
+            </div>
+            <div class="col-sm-3 col-padding">
+                <img class="image02" src="img/calendars/pd-8.jpg" alt="">
+                <p class="txt">Hanging wall Calendar</p>
+                <button type="button" class="btn btn-link button-flex">Read More</button>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-    <div id="content">
+  </div>
 
-    </div>
-    <div id="footer">
+    <!--Diary
+  <div id="diary">
+    <form>
+      <fieldset id="field_diary">
+        <legend id="legend_diary" class="w-auto">DIARY</legend>
+        <div id="chu"> <h5> Editor's Picks </h5>
+          <a id="to"><h2>Home favourites</h2></a>
+          <p>See More <a href="#"><i class="fa fa-arrow-right" style="font-size:15px"></i></a></p>
+        </div>
+            
+        <div id="prd_diary">
+          <div id="prd__01"> 
+            <a href="#"><img id="anhsp1" src="img/Diary/il_1140xN.3474875846_e84b.jpg" ></a>       
+          </div>
+                    
+          <div id="prd__02">
+            <a href="#"><img id="anhsp2" src="img/Diary/il_1140xN.3492705258_fuk1.webp" ></a>       
+          </div>
+          
+          <div class="prd__r3">
+            <a href="#"><img class="anhsp3h" src="img/Diary/il_1140xN.3097341582_oqxa.jpg" ></a>
+          </div>
+          <div class="prd__r3">
+            <a href="#"><img class="anhsp3h" src="img/Diary/il_1140xN.3306081202_evfd.jpg" ></a>
+          </div>
+          <div class="prd__r3">
+            <a href="#"><img class="anhsp3h" src="img/Diary/il_1140xN.3306113374_pxyq.jpg"></a>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>-->
 
+
+    <!--NEWS-->
+  <div id="news-home">
+    <div class="container3">
+      <div class="news-text">
+        <a href="#">
+          <span>YOU CAN SEE MORE NEWS: CALENDAR & DIARY</span>
+          <i class="fas fa-arrow-right fa-xs"></i>
+        </a>
+      </div>
+      <section class="news">
+        <div class="news-list">
+          <div class="news-item">
+            <a href="#">
+              <img src="img/Banner/banner3.jpg" alt="" class="news-image" />
+              <h3 class="news-title">Offer the best viewing experience.</h3>
+              <p class="news-desc text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                magnam officiis quo atque cupiditate reiciendis in, incidunt
+                accusamus quasi velit minus, nobis delectus reprehenderit
+                inventore modi, ipsum illum porro nulla.
+              </p>
+              <p class="button button--outline news-more">Learn more</p>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="img/Banner/banner3.jpg" alt="" class="news-image" />
+              <h3 class="news-title">Offer the best viewing experience.</h3>
+              <p class="news-desc text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                magnam officiis quo atque cupiditate reiciendis in, incidunt
+                accusamus quasi velit minus, nobis delectus reprehenderit
+                inventore modi, ipsum illum porro nulla.
+              </p>
+              <p class="button button--outline news-more">Learn more</p>
+            </a>
+          </div>
+          <div class="news-item">
+            <a href="#">
+              <img src="img/Banner/banner3.jpg" alt="" class="news-image" />
+              <h3 class="news-title">Offer the best viewing experience.</h3>
+              <p class="news-desc text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                magnam officiis quo atque cupiditate reiciendis in, incidunt
+                accusamus quasi velit minus, nobis delectus reprehenderit
+                inventore modi, ipsum illum porro nulla.
+              </p>
+              <p class="button button--outline news-more">Learn more</p>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
+  </div>
 </div>
+
+
+    <!--FOOTER--> 
+  <div id="footer">
+    <div class="container-fluid2 justify-content-center">
+        <div class="row py-5">
+            <div class="col">
+                <div class="card border-0">
+                    <div class="card-body text-center ">
+                        <h2><b>Let's have a chat !</b></h2>
+                        <p class="pl-0 ml-0 mb-5">Get latest updates and offers.</p>
+                        <div class="row text-center justify-content-center">
+                            <div class="col-auto">
+                                <div class="input-group-lg input-group mb-3 "><input type="text" class="form-control" placeholder="Enter your e-mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append"><button class="btn btn-success" type="button" id="button-addon2"> <b>Submit</b></button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="mx-0 px-0">
+        <footer>
+            <div class="row justify-content-around mb-0 pt-5 pb-0">
+                <div class=" col-11">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-12 font-italic align-items-center mt-md-3 mt-4">
+                            <h5>
+                              <span><img src="Logo/Logo-hd.png" class="img-fluid mb-1 "></span>
+                              <br>
+                              <!-- <b class="text-dark"> Key<span class="text-muted"> Pass</span></b> -->
+                            </h5>
+                            <p class="social mt-md-3 mt-2"> 
+                              <span><a href="abc">
+                                <i class="fa fa-facebook " aria-hidden="true"></i>
+                              </a></span> 
+                              <span><a href="abc">
+                                <i class="fa fa-linkedin " aria-hidden="true"></i>
+                              </a></span> 
+                              <span><a href="abc">
+                                <i class="fa fa-twitter " aria-hidden="true"></i>
+                              </a></span> 
+                            </p> 
+                            <small class="copy-rights cursor-pointer">&#9400; 2021 CalendarsTeam <br>T2108M - FPT Aptech</small><br> 
+                            <small>Copyright.All Rights Resered. </small>
+                        </div>
+                        <div class="col-md-3 col-12 my-sm-0 mt-5">
+                            <ul class="list-unstyled">
+                                <li class="mt-md-3 mt-4">Our Solution</li>
+                                <li>Home</li>
+                                <li>News</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-12 my-sm-0 mt-5">
+                            <ul class="list-unstyled">
+                                <li class="mt-md-3 mt-4">Your needs</li>
+                                <li>Intergrated Security</li>
+                                <li>Core Features</li>
+                                <li>Product Features</li>
+                                <li>Pricing</li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-auto col-md-3 col-12 my-sm-0 mt-5">
+                            <ul class="list-unstyled">
+                                <li class="mt-md-3 mt-4">Offer</li>
+                                <li>Intergrated Security Platform</li>
+                                <li>Core Features</li>
+                                <li>Product Features</li>
+                                <li>Pricing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+  </div>
 
 </body>
 </html>
