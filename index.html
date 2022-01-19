@@ -57,23 +57,22 @@
       integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
       crossorigin="anonymous"
     ></script>
-   
 </head>
 
 <body>
   <div id="container-total">
       <div id="nav" class="clear-fix">
               <!--Header-->
-          <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <header class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-branch" href="#">
-                <img src="Logo/Logo-hd.png" height="70px">
+                <img src="logo/Logo-hd.png" height="70px">
               </a>
 
               <div class="nav-bar" id="nav-fix">
                 <ul>
                   <li class="active"><a href="index.html">Home</a></li>
-                  <li><a href="#">News</a></li>
+                  <li><a href="abc.html">News</a></li>
                   <li><a href="#">Products</a>
                     <table class="dropdown">
                       <tr class="dropdown-title">
@@ -110,7 +109,24 @@
                 </ul>
               </div>
             </div>
-          </nav>
+          </header>
+
+              <!--Back to top -->
+            <button id="myBtn" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+            <script>
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+              if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+              document.getElementById("myBtn").style.display = "block";
+              } else {
+              document.getElementById("myBtn").style.display = "none";
+              }
+              }
+            document.getElementById('myBtn').addEventListener("click", function(){
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            });
+            </script>
 
           <div id="content">
                   <!--Banner-->
@@ -733,6 +749,6 @@
         </footer>
     </div>
   </div>
-
+  
 </body>
 </html>
