@@ -19,12 +19,11 @@
   }
   .button-welcome button {
     height: 30px;
-    background: #333333;
-    color: white;
-    border: none;
-    box-shadow: 2px 3px 1px 0px #868686;
-    padding: 3px 14px;
-    border-radius: 5px 5px 9px 9px;
+    background: white;
+    /* box-shadow: 2px 3px 1px 0px #868686; */
+    padding: 1px 16px;
+    border-radius: 12px;
+    border-color: #db941d;
     margin-bottom: 35px;
     text-align: center;
   }
@@ -32,7 +31,7 @@
     font-size: 13px;
     font-weight: bolder;
     text-decoration: none;
-    color: #e4e4e4;
+    color: #333333;
   }
   .button-welcome a:hover{
     color: #db941d;

@@ -97,9 +97,9 @@
     margin: 0px;
     margin-right: 20px;
   }
-  .news-item a:nth-child(2){ 
+  /* .news-item a:nth-child(2){ 
     text-decoration: underline;
-  } 
+  }  */
   .news-item:hover {
     border-color: transparent;
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.03);
