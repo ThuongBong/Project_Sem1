@@ -36,16 +36,9 @@
     padding-left: 8px;
   }
 
+
   .nav-tabs a{
     max-width: 1200px;
-  }
-  .image02 {
-    vertical-align: middle;
-    border-style: none;
-    width: 100%;
-    height: 38vh;
-    border-radius: 12px;
-    margin: auto;
   }
   .nav-link {
     padding: 16px 20px 11px 20px;
@@ -66,6 +59,16 @@
     background-color: #ffffff;
     border-color: #ffffff;
   }
+  .nav-tabs .nav-link{
+    border-bottom: 1px solid #dee2e6;
+  }
+  .nav-tabs .nav-link.active {
+    opacity: 1;
+    color: #333333;
+  }
+  .nav-tabs .nav-item{
+    margin-bottom: 0px;
+  }
 
   .tab-content{
     padding: 0px !important;
@@ -73,14 +76,17 @@
     float: left !important;
     margin-left: -13px !important;
   }
-
   .tab-pane{
     margin-top: 0px !important;
     padding-left: 10px;
   }
-  .nav-tabs .nav-link.active {
-    opacity: 1;
-    color: #333333;
+  .image02 {
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 38vh;
+    border-radius: 12px;
+    margin: auto;
   }
   .btn-link {
     margin: auto;

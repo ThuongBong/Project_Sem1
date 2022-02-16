@@ -1,0 +1,156 @@
+.Comment{
+    width: 550px;
+    height: auto;
+}
+.Pagenew{
+    background: #ffffff;
+    margin-top: -70px;
+    color: #333;
+}
+.Pagenew1{
+    background: rgb(219, 148, 29, 0.02);
+    border-left: 1px solid #fff3de;
+    border-right: 1px solid #fff3de;
+    padding-top: 50px;
+    margin-top: 70px;
+}
+.Pagenew1 b{
+    font-size: large;
+}
+.contentnewTitle a{
+    text-decoration: none;
+}
+.contentnewTitle .Title1{
+    margin-top: 45px;
+}
+.contentnewTitle h4{
+    color: #db941d;
+    font-family: "Muli", sans-serif;
+    font-weight: 550;
+}
+.contentnewTitle h6{
+    color: #333333e0;
+}
+.contentnewTitle img{
+    width: 100%;
+}
+
+.meta1> span> h6{
+    color: #616161;
+    font-size: 14px;
+}
+.meta1> span> h6> a{
+    text-decoration: none;
+    color: #616161;
+    font-size: 14px;
+}
+.meta1> span> h6> a:hover{
+    color: #a161bf;
+}
+
+.contentnewTitle1 img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contentnewTitle1 h6{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contentnewTitle1 p{
+    color: #333333e0;
+}
+.contentnewTitle1 i{
+    font-size: 12px;
+    color: #333333e0;
+    display: block;
+    text-align: center;
+}
+
+.navnew{
+    margin-bottom: 5px;
+    border-bottom: 1px solid #F7BE81;
+}
+.Related{
+    margin-top: 100px;
+}
+.Related h5 {
+    font-family: "Muli", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-style: italic;
+}
+.navnew img{
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+.navnew a{
+    text-decoration: none;
+}
+.navnew img{ 
+    width: 100px; 
+    height: 80px;
+}
+.navnew p{
+    color: #333; 
+    margin-bottom: 0px; 
+    font-size: 14px;
+}
+.Navnew1 a{
+    text-decoration: none;
+}
+.Navnew1 img{
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+.interested h5{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Muli", sans-serif;
+    font-weight: 550;
+    font-style: italic;
+}
+.Navnew1 p{
+    color: #29292b;
+}
+.InterestedNew a{
+    text-decoration: none;
+}
+.InterestedNew h5{
+    text-align: center;
+    border-bottom: 1px solid #F7BE81;
+    color: #333333;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-family: "Muli", sans-serif;
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: 550;
+}
+.InterestedNew img{
+    width: 100%;
+    height: 173px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+.InterestedNew p{
+    color: #29292b;
+}
+
+.ads_right button{
+    background:#fff;
+    border-radius: 5px;
+    color:#181816;
+    box-shadow: 2px 2px 2px black;
+    font-size: 12px;
+}
+
+.col-xl-3{
+    margin-bottom: 60px;
+}
+
+.commentfb{
+    margin-top: 80px;
+}
