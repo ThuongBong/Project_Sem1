@@ -11,7 +11,7 @@
     background: rgb(219, 148, 29, 0.02);
     border-left: 1px solid #fff3de;
     border-right: 1px solid #fff3de;
-    padding-top: 50px;
+    padding-top: 70px;
     margin-top: 70px;
 }
 .Pagenew1 b{
@@ -26,7 +26,7 @@
 .contentnewTitle h4{
     color: #db941d;
     font-family: "Muli", sans-serif;
-    font-weight: 550;
+    font-weight: 650;
 }
 .contentnewTitle h6{
     color: #333333e0;
@@ -37,15 +37,15 @@
 
 .meta1> span> h6{
     color: #616161;
-    font-size: 14px;
+    font-size: 12.5px;
 }
 .meta1> span> h6> a{
     text-decoration: none;
     color: #616161;
-    font-size: 14px;
+    font-size: 12.5px;
 }
 .meta1> span> h6> a:hover{
-    color: #a161bf;
+    color: #db941d;
 }
 
 .contentnewTitle1 img{
@@ -68,6 +68,7 @@
 }
 
 .navnew{
+    margin-top: 10px;
     margin-bottom: 5px;
     border-bottom: 1px solid #F7BE81;
 }
@@ -96,6 +97,10 @@
     margin-bottom: 0px; 
     font-size: 14px;
 }
+
+.Navnew1{
+    margin-top: 30px;
+}
 .Navnew1 a{
     text-decoration: none;
 }
@@ -112,7 +117,8 @@
     font-style: italic;
 }
 .Navnew1 p{
-    color: #29292b;
+    color: #333333d2;
+    font-size: 14px;
 }
 .InterestedNew a{
     text-decoration: none;
@@ -139,6 +145,9 @@
     color: #29292b;
 }
 
+.ads_right{
+    margin-top: 30px;
+}
 .ads_right button{
     background:#fff;
     border-radius: 5px;
