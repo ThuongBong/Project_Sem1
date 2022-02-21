@@ -88,7 +88,7 @@
     border-radius: 12px;
     margin: auto;
   }
-  .btn-link {
+  .btn-link a {
     margin: auto;
     display: block !important;
     margin-bottom: 15px;
@@ -96,7 +96,7 @@
     color: #333333;
     text-decoration: underline;
   }
-  .btn-link:hover{
+  .btn-link a:hover{
     color: #db941d;
   }
   .txt {
