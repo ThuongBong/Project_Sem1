@@ -87,6 +87,12 @@
 
 
 <div id="container-total">
+        <!-- Page Preloder -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
     <div id="nav" class="clear-fix">
                 <!--Header-->
         <header class="navbar navbar-expand-md navbar-light">
@@ -99,7 +105,7 @@
                     <ul>
                         <li><a href="../../index.html">Home</a></li>
                         <li><a href="../NEWS/news.html">News</a></li>
-                        <li><a href="#">Products</a>
+                        <li><a href="../product/product.html">Products</a>
                             <table class="dropdown">
                             <tr class="dropdown-title">
                                 <th><a href="#">Calendars</a></th>
@@ -124,7 +130,8 @@
                             <tr>
                                 <td><a href="../product/book-calendar/book-calendar.html">Book Calendars</a></td>
                             </tr>
-                            </table></li>
+                            </table>
+                        </li>
                         <li class="active"><a href="./about.html">About</a>
                             <ul class="dropdown">
                                 <li><a href="./about.html">Company</a></li>
@@ -160,11 +167,9 @@
                     <div class="col-xl-6 col-md-6 col-12 col-sm-12">
                         <div class="slot6">
                             <div class="slot8">
-                                Ryana Calendars is selling different types of Calendar and Diary products.
-                                The company advertises by handing out leaflets, v.v. Due to the rapid development
-                                of the internet field in this day and age, the company decided to establish a website
-                                where people will get all the information about the product is different each other is
-                                available to them easily and quickly.
+                                Ryana Calendars is selling Calendar and Diary products. The company advertises by distributing leaflets, printing in newspapers, v.v. However, due to the rapid development of the internet sector in this day and age, almost everyone is focused on technology. And so we decided to set up a website where people will get all the information about different products easily, quickly and appropriately.
+                                We who make these calendars and diaries strive to develop and bring the best sense of product selection and reference to users. 
+                                Our calendars and diaries are printed with different messages and colors with the hope that people can better understand personality, people, the earth, even animals… so that everyone can stay optimistic, live happily every day. With Ryana Calendars, you'll be able to find the calendar or diary that suits your needs, with dozens of different options to help you choose the best product.
                             </div>
                         </div>
                     </div>
@@ -297,15 +302,15 @@
                             <!-- <b class="text-dark"> Key<span class="text-muted"> Pass</span></b> -->
                             </h5>
                             <p class="social mt-md-3 mt-2"> 
-                            <a href="https://www.facebook.com/">
-                                <i class="fa fa-facebook " ></i>
-                            </a> 
-                            <a href="https://www.linkedin.com/">
-                                <i class="fa fa-linkedin "></i>
-                            </a> 
-                            <a href="https://www.twitter.com/">
-                                <i class="fa fa-twitter "></i>
-                            </a> 
+                                <a href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook " ></i>
+                                </a> 
+                                <a href="https://www.linkedin.com/">
+                                    <i class="fa fa-linkedin "></i>
+                                </a> 
+                                <a href="https://www.twitter.com/">
+                                    <i class="fa fa-twitter "></i>
+                                </a> 
                             </p> 
                             <small class="copy-rights cursor-pointer">&#9400; 2021 CalendarsTeam <br>T2108M - FPT Aptech</small><br> 
                             <small>Copyright.All Rights Resered. </small>
@@ -314,7 +319,7 @@
                             <ul class="list-unstyled list-footer">
                                 <li class="mt-md-3 mt-4">INFORMATION</li>
                                 <li><a href="./about.html">About Us</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="../contact/contact.html">Contact Us</a></li>
                                 <li><a href="./about.html">Company</a></li>
                                 <li><a href="./about.html">Our Teams</a></li>
                             </ul>
@@ -322,9 +327,10 @@
                         <div class="col-md-3 col-12 my-sm-0 mt-5">
                             <ul class="list-unstyled list-footer">
                                 <li class="mt-md-3 mt-4">PRODUCTS</li>
-                                <li><a href="#">Calendars</a></li>
-                                <li><a href="#">Diaries</a></li>
-                                <li><a href="#">Sales</a></li>
+                                <li><a href="../product/top-calendar/top-calendar.html">Calendars</a></li>
+                                <li><a href="../product/diaries/diary.html">Diaries</a></li>
+                                <li><a href="../product/sale.html">Sales</a></li>
+                                <li><a href="../product/Best-selling.html">Best-selling</a></li>
                             </ul>
                         </div>
                         <div class="col-xl-auto col-md-3 col-12 my-sm-0 mt-5">
@@ -343,6 +349,17 @@
         </div>
     </div>
 </div>
+
+    <!-- js -->
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+            $("#preloader").delay(200).fadeOut("slow");
+        });
+    </script>
+
+  <!-- Js Plugins -->
+  <script src="js/jquery-3.3.1.min.js"></script>
 
 </body>
 </html>

@@ -6,6 +6,7 @@
   .container-fluid {
     margin-bottom: 35px;
     padding-left: 0px;
+    margin-left: -15px !important;
     color: #333333;
   }
 
@@ -55,12 +56,14 @@
     text-decoration: none;
     font-weight: 550;
   }
+  .caption a:hover{
+    color: #db941d;
+  }
 
   .caption01 {
-    text-align: center;
+    text-align: justify;
     margin-top: 65px;
-    text-align: left;
-    font-size: 13.5px;
+    font-size: 14px;
   }
   /*.button-flex {
     margin: auto;

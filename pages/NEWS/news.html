@@ -16,27 +16,49 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="../NEWS/css/style.css" rel="stylesheet" type="text/css"/>
         <link href="../NEWS/css/News.css" rel="stylesheet" type="text/css"/>
-        <link href="../NEWS/css/News1.css" rel="stylesheet" type="text/css"/>        
+        <link href="../NEWS/css/News1.css" rel="stylesheet" type="text/css"/>  
+        
+         <!--js load-->
+            <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"
+        ></script>
+
     </head>
 
-    <div>
-        <!--Back to top -->
-    <button id="myBtn" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-    <script>
-    window.onscroll = function() {scrollFunction()};
-    function scrollFunction() {
-        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.getElementById("myBtn").style.display = "block";
-        } else {
-        document.getElementById("myBtn").style.display = "none";
-        }
-        }
-    document.getElementById('myBtn').addEventListener("click", function(){
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
-    </script>
-    
+<body>
+            <!-- Page Preloder -->
+        <div id="preloader">
+            <div class="loader"></div>
+        </div>
+
+            <!--Back to top -->
+        <button id="myBtn" title="Back to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+        <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            document.getElementById("myBtn").style.display = "block";
+            } else {
+            document.getElementById("myBtn").style.display = "none";
+            }
+            }
+        document.getElementById('myBtn').addEventListener("click", function(){
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+        </script>
 
                 <!--Header-->
         <header class="navbar navbar-expand-md navbar-light">
@@ -49,7 +71,7 @@
                     <ul>
                         <li><a href="../../index.html">Home</a></li>
                         <li class="active"><a href="../NEWS/news.html">News</a></li>
-                        <li><a href="#">Products</a>
+                        <li><a href="../product/product.html">Products</a>
                             <table class="dropdown">
                             <tr class="dropdown-title">
                                 <th><a href="#">Calendars</a></th>
@@ -57,7 +79,7 @@
                             </tr>
                             <tr>
                                 <td><a href="../product/top-calendar/top-calendar.html">Top Calendars</a></td>
-                                <td><a href="#">Diaries 2022</a></td>
+                                <td><a href="../product/diaries/diary.html">Diaries 2022</a></td>
                             </tr>
                             <tr>
                                 <td><a href="../product/wall-calendar/wall-calendar.html">Wall Calendars</a></td>
@@ -74,7 +96,8 @@
                             <tr>
                                 <td><a href="../product/book-calendar/book-calendar.html">Book Calendars</a></td>
                             </tr>
-                            </table></li>
+                            </table>
+                        </li>
                         <li><a href="../about/about.html">About</a>
                             <ul class="dropdown">
                                 <li><a href="../about/about.html">Company</a></li>
@@ -88,7 +111,7 @@
         </header>
 
             <!-- banner -->
-        <section class="hero-wrap hero-wrap-2" style="background-image: url('../NEWS/img/images.jpg');">
+        <section class="hero-wrap hero-wrap-2" style="background-image: url('../NEWS/img/Untitled-1.jpg');">
             <!-- <div class="overlay"></div> -->
             <div class="container">
                 <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -271,7 +294,7 @@
                     <div class="col-xl-3 col-12 col-sm-12 col-md-6 col-lg-6 news">
                         <div class="img-hover">
                             <a href="./pages/News2.html"><img src="./img/news2/23.jpg" alt="The Birth of the Calendar and Astronomy" title="The Birth of the Calendar and Astronomy"/></a>
-                            <h4 class="Newimghover" title="The Birth of the Calendar and Astronomy"><a href="./pages/News2.html">The Birth of the Calendar...</a></h4>
+                            <h4 class="Newimghover" title="The Birth of the Calendar and Astronomy"><a href="./pages/News2.html">Calendar and Astronomy...</a></h4>
                         </div>
                         <div class="meta">
                             <span>
@@ -525,9 +548,10 @@
                             <div class="col-md-3 col-12 my-sm-0 mt-5">
                                 <ul class="list-unstyled">
                                     <li class="mt-md-3 mt-4">PRODUCTS</li>
-                                    <li><a href="#">Calendars</a></li>
-                                    <li><a href="#">Diaries</a></li>
-                                    <li><a href="#">Sales</a></li>
+                                    <li><a href="../product/top-calendar/top-calendar.html">Calendars</a></li>
+                                    <li><a href="../product/diaries/diary.html">Diaries</a></li>
+                                    <li><a href="../product/sale.html">Sales</a></li>
+                                    <li><a href="../product/Best-selling.html">Best-selling</a></li>
                                 </ul>
                             </div>
                             <div class="col-xl-auto col-md-3 col-12 my-sm-0 mt-5">
@@ -546,12 +570,23 @@
         </div>
     </div>
 
+    <!-- js -->
+    <script>
+        $(window).on('load', function () {
+            $(".loader").fadeOut();
+            $("#preloader").delay(200).fadeOut("slow");
+        });
+    </script>
+
+    <!-- Js Plugins -->
+    <script src="./js/jquery-3.3.1.min.js"></script>
 
     <!-- js -->
-    <script src="../NEWS/js/News.js" type="text/javascript"></script>
+    <script src="./js/News.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" ></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
 
-    </body>
+</body>
 </html>

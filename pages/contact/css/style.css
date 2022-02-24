@@ -201,7 +201,7 @@ margin: 0 auto;
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: #fcf7ed;
 }
 
 .loader {
@@ -221,19 +221,19 @@ margin: 0 auto;
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #db941d;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #304ed4;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #d8372c;
 		border-left-color: transparent;
 	}
 }
@@ -241,17 +241,17 @@ margin: 0 auto;
 @-webkit-keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		border: 4px solid #f44336;
+		border: 4px solid #db941d;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		border: 4px solid #673ab7;
+		border: 4px solid #304ed4;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
-		border: 4px solid #f44336;
+		border: 4px solid #d8372c;
 		border-left-color: transparent;
 	}
 }
@@ -309,6 +309,7 @@ margin: 0 auto;
 
   .navbar-branch img{
     float: left !important;
+	padding-left: 7px;
   }
 
   .nav-bar {
@@ -316,6 +317,7 @@ margin: 0 auto;
     display: -ms-inline-flexbox;
     display: inline-flex;
 	margin-bottom: 16px;
+	padding-right: 15.5px;
   }
   
   .nav-bar li {
@@ -465,7 +467,7 @@ margin: 0 auto;
     height: 300px !important;
     position: relative;
     margin-bottom: -30px;
-    margin-top: 20px;
+    margin-top: 22px;
 }
 .hero-wrap.hero-wrap-2 .overlay {
     width: 100%;
@@ -512,7 +514,7 @@ margin: 0 auto;
     font-weight: 400; }
 
 .no-gutters > .col, .no-gutters > [class*="col-"]{
-    bottom: 40px;
+    bottom: 18px;
 }
 
 .mb-0 {
@@ -588,6 +590,7 @@ margin: 0 auto;
 	margin-bottom: 38px;
 }
 
+
 .contact-form .leave-comment .comment-form input {
 	width: 100%;
 	font-size: 16px;
@@ -596,7 +599,7 @@ margin: 0 auto;
 	border: 2px solid #db941d;
 	border-radius: 12px;
 	padding-left: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .contact-form .leave-comment .comment-form textarea {

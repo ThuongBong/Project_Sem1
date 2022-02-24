@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
+</head> 
 
 <body>
     <!-- Page Preloder -->
@@ -65,7 +65,7 @@
                         <ul>
                             <li><a href="../../index.html">Home</a></li>
                             <li><a href="../NEWS/news.html">News</a></li>
-                            <li><a href="#">Products</a>
+                            <li><a href="../product/product.html">Products</a>
                                 <table class="dropdown">
                                 <tr class="dropdown-title">
                                     <th><a href="#">Calendars</a></th>
@@ -90,7 +90,8 @@
                                 <tr>
                                     <td><a href="../product/book-calendar/book-calendar.html">Book Calendars</a></td>
                                 </tr>
-                                </table></li>
+                                </table>
+                            </li>
                             <li><a href="../about/about.html">About</a>
                                 <ul class="dropdown">
                                     <li><a href="../about/about.html">Company</a></li>
@@ -125,8 +126,9 @@
                         <div class="col-lg-5">
                             <div class="contact-title">
                                 <h4>Contacts Us</h4>
-                                <p>Contrary to popular belief, Lorem Ipsum is simply random text. It has roots in a piece of
-                                    classical Latin literature from 45 BC, maki years old.</p>
+                                <p>
+                                    We believe that progress can always be made by continuously driving growth for our customers and employees, shaping decisions and experiences through media, content and technology.
+                                </p>
                             </div>
                             <div class="contact-widget">
                                 <div class="cw-item">
@@ -135,7 +137,7 @@
                                     </div>
                                     <div class="ci-text">
                                         <span>Address:</span>
-                                        <p>FPT Aptech - 8A Ton That Thuyet, My Dinh, Hanoi, Viet Nam.</p>
+                                        <p>FPT Aptech - 8A Ton That Thuyet,&nbsp &nbsp My Dinh, Ha Noi, Viet Nam</p>
                                     </div>
                                 </div>
                                 <div class="cw-item">
@@ -165,17 +167,35 @@
                                     <p>Our staff will call back later and answer your questions.</p>
                                     <form action="#" class="comment-form">
                                         <div class="row">
-                                            <div class="col-lg-6">
-                                                <input type="text" placeholder="Your Name">
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <input type="email" placeholder="Your Email">
-                                            </div>
                                             <div class="col-lg-12">
-                                                <input type="text" placeholder="Your Phone">
+                                                <input type="text" placeholder="Your Name *" id="yourname" onBlur="Check();" autofocus
+                                                pattern="[A-Za-z]{0,100}" 
+                                                title="Your name must be entered with letters and must be written next to each other" required/>     
                                             </div>
+
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder="Your Email *" id="youremail" onBlur="Check();"  
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                                                title="Email format: ryanacalendars@ryanacalendars.domain"
+                                                required/>
+                                            </div>
+
+                                            <div class="col-lg-6">
+                                                <input type="text" placeholder="Your Phone *" id="yourphone" onBlur="Check();" 
+                                                pattern="(\+84){1}(3|5|7|8|9)+([0-9]{8})"
+                                                title="Phone format: +843|5|7|8|9xxxxxxxx" required/>  
+                                            </div>
+
                                             <div class="col-lg-12">
-                                                <textarea placeholder="Your Message"></textarea>
+                                                <input type="text" placeholder="Content Subject *" id="yoursubject" onBlur="Check();"
+                                                minlength="10"  
+                                                title="Please enter at least 10 characters" required/>     
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <textarea placeholder="Content *" id="yourcontent" onBlur="Check();" 
+                                                minlength="10"  
+                                                title="Please enter at least 10 characters" required></textarea>
                                                 <button type="submit" class="site-btn">Send message</button>
                                             </div>
                                         </div>
@@ -262,9 +282,10 @@
                             <div class="col-md-3 col-12 my-sm-0 mt-5">
                                 <ul class="list-unstyled">
                                     <li class="mt-md-3 mt-4">PRODUCTS</li>
-                                    <li><a href="#">Calendars</a></li>
-                                    <li><a href="#">Diaries</a></li>
-                                    <li><a href="#">Sales</a></li>
+                                    <li><a href="../product/top-calendar/top-calendar.html">Calendars</a></li>
+                                    <li><a href="../product/diaries/diary.html">Diaries</a></li>
+                                    <li><a href="../product/sale.html">Sales</a></li>
+                                    <li><a href="../product/Best-selling.html">Best-selling</a></li>
                                 </ul>
                             </div>
                             <div class="col-xl-auto col-md-3 col-12 my-sm-0 mt-5">
@@ -294,6 +315,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

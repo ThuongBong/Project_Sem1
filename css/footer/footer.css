@@ -14,6 +14,10 @@
     margin-top: 100px !important;
 }
 
+.justify-content-around{
+    margin-left: 7px;
+}
+
 .card {
     padding-bottom: 30px;
     color: #757575 !important;
@@ -27,7 +31,10 @@
 .text-center{
     text-align: center;
     margin: 0 auto;
-    padding-right: 15px;
+    /* padding-right: 15px; */
+}
+.card-body{
+    padding: 1.25rem 0 1.25rem 1.6rem;
 }
 
 p.pl-0 {
@@ -153,4 +160,10 @@ footer {
 }
 .social a:hover{
   text-decoration: none;
+}
+#button-addon2 a{
+    text-decoration: none;
+    color: white !important;
+    font-weight: bold;
+    font-size: 12px;
 }

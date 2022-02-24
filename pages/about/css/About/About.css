@@ -3,11 +3,74 @@ body{
     font-family: "Muli", sans-serif;
     letter-spacing: 0.1em;
     background-color: #fff;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     max-width: 1504.2px;
     text-align: left;
     color: #333;
-    /* margin-right: -10px; */
+    /* margin-right: -100px !important; */
+}
+/* Preloder */
+
+#preloader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #fcf7ed;
+}
+
+.loader {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		border: 4px solid #db941d;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		border: 4px solid #304ed4;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+		border: 4px solid #d8372c;
+		border-left-color: transparent;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		-webkit-transform: rotate(0deg);
+		border: 4px solid #db941d;
+		border-left-color: transparent;
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+		border: 4px solid #304ed4;
+		border-left-color: transparent;
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		border: 4px solid #d8372c;
+		border-left-color: transparent;
+	}
 }
 #container-total{
     text-align: center;
@@ -43,7 +106,7 @@ body{
 
 .slot4 {
     height: 350px;
-    margin-top: 100px;
+    margin-top: 85px;
 }
 
 .slot6 {
@@ -54,19 +117,20 @@ body{
 
 .slot7 {
     max-width: 700px;
-    height: 350px;
+    height: 500px;
     background-repeat: no-repeat;
     background-image: url("../../img/About/About-Img 2.jpg");
-    margin-left: 20px;
-    background-size: 100% 350px;
-    margin-top: 50px;
+    margin-left: 35px;
+    /* background-size: 100% 500px; */
+    margin-top: 45px;
     border-radius: 12px;
+    /* border: 2px solid #db941d; */
 }
 
 .slot8 {
     /* margin-left: 30px; */
     margin-right: 20px;
-    margin-top: 120px;
+    margin-top: 65px;                             
     text-align: justify;
     font-size: 18px;
     color: #333;
@@ -79,14 +143,14 @@ body{
     font-weight: bold;
     font-family: "Muli", sans-serif;
     bottom: 50px;
-    color: #333;
-}
-.company-title:hover{
     color: #db941d;
 }
+/* .company-title:hover{
+    color: #db941d;
+} */
 
 #content_2 {
-    margin-top: 30px;
+    margin-top: 160px;
     max-width: 1150px;
     text-align: center;
 }
