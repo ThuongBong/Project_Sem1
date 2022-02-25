@@ -245,7 +245,7 @@ body {
 background-color: #db951d00 !important;
 }
 .p-3 {
-  padding: 60px 10px 120px 10px !important;
+  padding: 0px 10px 120px 10px !important;
 }
 .product-details {
     margin-top: 13px
@@ -271,13 +271,28 @@ background-color: #db951d00 !important;
   margin-top: -100px;
   margin-bottom: 50px;
 }
-.inforuser h6{
+.inforuser span{
   font-weight: bold;
   font-size: large;
   text-decoration: underline;
-  margin-bottom: 10px;
+}
+.back-confirm{
+  margin-top: 30px;
+  /* margin-bottom: 20px !important; */
+  margin-left: 920px;
+  font-size: 17px;
+  color: #db941d ;
+  font-weight: 500;
+  /* border: 1px solid #db941d; */
+  border-radius: 12px;
+  padding-bottom: 10px;
+}
+.back-confirm:hover{
+  color: #db941d;
+  text-decoration: underline;
 }
 .inforuser p{
+  margin-top: 10px !important;
   font-size: 13px;
   margin-bottom: 10px;
 }

@@ -423,7 +423,7 @@ margin: 0 auto;
     bottom: 0;
     content: '';
     opacity: .4;
-    background: #000000;
+    background: #000;
     font-family: "Muli", sans-serif;
 }
 .hero-wrap .slider-text {
@@ -468,6 +468,7 @@ margin: 0 auto;
     position: relative;
     margin-bottom: -30px;
     margin-top: 22px;
+	border-radius: 12px; 
 }
 .hero-wrap.hero-wrap-2 .overlay {
     width: 100%;
@@ -478,7 +479,9 @@ margin: 0 auto;
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .3; }
+    opacity: .3;
+	border-radius: 12px; 
+}
 .hero-wrap.hero-wrap-2 .slider-text {
     height: 220px !important; }
 .hero-wrap.hero-wrap-2 .slider-text .breadcrumbs {
