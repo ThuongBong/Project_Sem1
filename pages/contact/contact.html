@@ -169,12 +169,16 @@
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <input type="text" placeholder="Your Name *" id="yourname" onBlur="Check();" autofocus
+                                                oninvalid="this.setCustomValidity('Please enter your name')"
+                                                oninput="setCustomValidity('')"
                                                 pattern="[A-Za-z]{0,100}" 
                                                 title="Your name must be entered with letters and must be written next to each other" required/>     
                                             </div>
 
                                             <div class="col-lg-6">
-                                                <input type="text" placeholder="Your Email *" id="youremail" onBlur="Check();"  
+                                                <input type="text" placeholder="Your Email *" id="youremail" onBlur="Check();"
+                                                oninvalid="this.setCustomValidity('Please enter your email')"
+                                                oninput="setCustomValidity('')"  
                                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
                                                 title="Email format: ryanacalendars@ryanacalendars.domain"
                                                 required/>
@@ -182,18 +186,24 @@
 
                                             <div class="col-lg-6">
                                                 <input type="text" placeholder="Your Phone *" id="yourphone" onBlur="Check();" 
+                                                oninvalid="this.setCustomValidity('Please enter your phone')"
+                                                oninput="setCustomValidity('')"
                                                 pattern="(\+84){1}(3|5|7|8|9)+([0-9]{8})"
                                                 title="Phone format: +843|5|7|8|9xxxxxxxx" required/>  
                                             </div>
 
                                             <div class="col-lg-12">
-                                                <input type="text" placeholder="Content Subject *" id="yoursubject" onBlur="Check();"
+                                                <input type="text" placeholder="Title *" id="yoursubject" onBlur="Check();"
+                                                oninvalid="this.setCustomValidity('Please enter your title')"
+                                                oninput="setCustomValidity('')"
                                                 minlength="10"  
                                                 title="Please enter at least 10 characters" required/>     
                                             </div>
 
                                             <div class="col-lg-12">
                                                 <textarea placeholder="Content *" id="yourcontent" onBlur="Check();" 
+                                                oninvalid="this.setCustomValidity('Please enter your content')"
+                                                oninput="setCustomValidity('')"
                                                 minlength="10"  
                                                 title="Please enter at least 10 characters" required></textarea>
                                                 <button type="submit" class="site-btn">Send message</button>
